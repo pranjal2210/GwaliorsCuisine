@@ -1,0 +1,78 @@
+.story-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.story-title, .goals-title{
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: var(--black-1);
+  margin-bottom: 1rem;
+}
+
+.story-text{
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--black-1);
+  margin-bottom: 1rem;
+}
+
+.story-desc, .goals-text{
+  font-size: 1.5rem;
+  color: var(--black-2);
+  line-height: 1.5em;
+}
+
+.goals-info{
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+.goals-img-wrapper{
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.goals-img-wrapper img{
+  object-fit: cover;
+}
+
+.goals-img1{
+  grid-row: 1/3;
+}
+
+#goals{
+  padding-bottom: 8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .story-wrapper{
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .story-img, .story-info{
+    flex: 1;
+  }
+
+  .story-title, .goals-title{
+    font-size: 2.8rem;
+  }
+
+  .story-text{
+    font-size: 2rem;
+  }
+
+  .story-desc, .goals-text{
+    font-size: 1.6rem;
+  }
+
+  .goals-info{
+    text-align: center;
+  }
+}
